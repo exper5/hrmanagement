@@ -1,0 +1,225 @@
+/* You can add global styles to this file, and also import other style files */
+
+.ds {
+    background-color: #1f232b;
+    color: #808080;
+}
+a { cursor: pointer }
+.footer {
+background: #5C6D7F;
+box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+padding:15px 0px 15px 0px;
+text-align: center;
+/* bottom: 0px; */
+position: absolute;
+width: 100%;
+}
+.footer a{color:white}
+.jumbotron{background: transparent !important;}
+@media (min-width: 500px){
+.columns_padding_25 > [class*="container"] > .row > [class*="col-"] {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+}
+.animated {
+    visibility: visible !important;
+}
+.page_footer .widget-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    margin-top: 35px;
+    margin-bottom: 55px;
+    position: relative;
+    display: block;
+}
+.page_footer .widget_nav_menu ul li:nth-child(odd) {
+    text-align: right;
+}
+.page_footer .widget_nav_menu ul li {
+    width: 50%;
+    float: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.page_footer .widget_nav_menu ul {
+    margin-top: -20px;
+}
+.page_footer .widget li, .page_footer .widget ul {
+    border: none;
+}
+.widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.page_footer.ds .widget_nav_menu ul li a {
+    color: #808080;
+}
+.page_footer .widget_nav_menu ul li a {
+    padding: 12px 15px;
+}
+.widget_archive a, .widget_categories a, .widget_meta a, .widget_nav_menu a, .widget_pages a {
+    display: inline-block;
+    padding: 4px 0 4px 25px;
+    position: relative;
+    color: #7f7f7f;
+}
+.section_padding_bottom_150 > [class*="container"] {
+    padding-bottom: 30px;
+}
+.section_padding_top_120 > [class*="container"] {
+    padding-top: 50px;
+}
+.widget_icons_list .media.inline-block .media-body i, .widget_icons_list .media.inline-block .media-left i {
+    line-height: 16px;
+}
+.widget_icons_list .media-left i {
+    display: inline-block;
+    width: 16px;
+    text-align: center;
+    color: #55bce7;
+}
+.page_footer.ds .widget_mc4wp_form_widget .button_for_footer input[type*="submit"] {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+.page_footer .widget_mc4wp_form_widget .button_for_footer input[type*="submit"] {
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+    padding: 18px 30px 18px;
+    border: 1px solid #0f0f0f;
+    color: #0f0f0f;
+    background-color: transparent;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    max-width: 170px;
+}
+.ds input[type="text"], .ds input[type="email"], .ds input[type="url"], .ds input[type="password"], .ds input[type="search"], .ds input[type="tel"], .ds input[type="number"], .ds textarea, .ds select, .ds .form-control {
+    background-color: rgba(15, 15, 15, 0.5);
+    color: #ffffff;
+    border: none;
+}
+#ftrmail {
+    height: 50px;
+    color:white;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    text-align:center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    line-height: 30px;
+    background-color: rgba(15, 15, 15, 0.5);
+}
+.headbar img {
+
+    width: 200px;
+
+}
+.preloader_image {
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url(/assets/preloader.gif) no-repeat 50% 50% transparent;
+    margin: -64px 0 0 -64px;
+}
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    z-index: 13000;
+    height: 100%;
+}
+.footertext {
+    text-align: center;
+    margin: 0 !important;
+}
+.contact100-form-btn:hover {
+    background-color: #333333;
+    box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+    -moz-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+    -webkit-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+    -o-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+    -ms-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+}
+.contact100-form-btn i {
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.contact100-form-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 160px;
+    height: 50px;
+    background-color: #ff4b5a;
+    border-radius: 25px;
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+    -moz-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+    -webkit-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+    -o-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+    -ms-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+}
+.contact100-form-btn:hover i {
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+    transform: translateX(10px);
+}
+.contact100-form-btn i {
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.fa.fa-long-arrow-right.m-l-7 {
+
+    color: white;
+
+}
+.btn.btn-link {
+
+    padding: 0;
+    color: #5a4b8b;
+    text-decoration: underline;
+
+}
+a:hover {
+    text-decoration: none;
+}
+.newreg img {
+    width: 20px;
+    height: auto;
+    margin-left: 16px;
+}

@@ -1,0 +1,105 @@
+.col-md-8.home {
+    margin:0 auto;
+    padding-bottom: 358px;
+
+}
+.btn.btn-primary.search {
+    padding: 10px 32px;
+    width:180px;
+}
+.btn.btn-primary.add {
+    padding: 10px 32px;
+    width:180px;
+}
+.current span {
+    text-transform: uppercase;
+    color: #007bff;
+}
+.footer{bottom:0px !important}
+.current {font-size: 40px; font-weight: 600;}
+@media screen and (min-width:768px) {
+    .col-md-12.search-box {
+        display: flex;
+    }
+    .current {
+        margin-bottom: 50px;
+    }
+    .col-md-12.search-box{text-align:center}
+    
+}
+@media screen and (max-width:480px) {
+
+.col-md-12.search-box{text-align:center}
+.current {
+    text-align: center;
+}
+}
+
+/* @media screen and (min-width:992px) {
+
+.col-md-12.newse{display:flex}
+} */
+
+
+
+/* .col-md-12.newse{
+    background: url(/assets/header-bg.jpg) center;
+    background-size: cover;
+} */
+.new1 {
+
+    /* width: 45%; */
+    position: relative;
+    /* box-shadow: 1px 1px #53A7EA, 2px 2px #53A7EA, 3px 3px #53A7EA;
+    transition: all 0.1s ease-in; */
+    padding: 20px;
+    border: 1px solid #000;
+    box-shadow: 5px 10px #888888;
+    font-size: 25px;
+    font-weight: 700;
+
+}
+.new{
+    /* width: 45%; */
+    position: relative;
+    /* box-shadow: 1px 1px #53A7EA, 2px 2px #53A7EA, 3px 3px #53A7EA;
+    transition: all 0.1s ease-in; */
+    border: 1px solid #000;
+    box-shadow: 5px 10px #888888;
+    padding:20px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.current{text-align: center; margin-top: 100px;}
+.btn {
+    margin-top: 83px;
+    padding: 15px 44px;
+    background-color: #1f232b;
+    color: white;
+    margin-left: 20px;
+}
+.btn:hover {
+    background-color: RoyalBlue;
+}
+@media screen and (max-width:767px) {
+    .new, .new1{
+        margin-bottom: 50px;
+        text-align:center;
+    }
+    .new img, .new1 img{
+        margin: 0 auto;
+        display: block;
+    }
+}
+.num h1 {
+    text-align: center;
+    width: 100%;
+    display: initial;
+    margin-bottom: 25px;
+}
+.count {
+    font-weight: 600;
+    font-size: 34px;
+    padding: 0px 10px;
+    color: #f45514;
+}

@@ -1,0 +1,122 @@
+.resulttitle {
+
+    border: 1px solid #000;
+
+}
+.table th {
+
+    border: 1px solid #000;
+
+}
+.result td {
+
+    border: 1px solid #000;
+
+}
+.table{margin-top: 20px;}
+
+.btn-primary.search {
+    overflow: visible;
+    position: relative;
+    /* float: right; */
+    border: 0;
+    padding: 2px;
+    cursor: pointer;
+    height: 40px;
+    width: 110px;
+    font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    color: #fff;
+    text-transform: uppercase;
+    background: #d83c3c;
+    -moz-border-radius: 0 3px 3px 0;
+    -webkit-border-radius: 0 3px 3px 0;
+    border-radius: 3px;
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+}
+.searchform input {
+    padding: 6px 20px;
+    margin: 2px;
+    width:100%;
+}
+.col-md-8.search {
+    margin: 0 auto;
+}
+.errormes {
+    text-align: center;
+    margin-top: 70px;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+}
+.searchform {
+
+    box-shadow: 8px 6px 16px 9px #5678AF;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width:50%;
+    margin: 0 auto;
+
+}
+.searchform h1 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+#home {
+  
+    padding-bottom: 0px;
+    margin-top: 50px;
+}
+.headbar {
+    background: #1f232b;
+    /* box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.3); */
+    padding: 0px 0px 10px 21px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+
+}
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+}
+
+#customers td {
+    text-align: center;
+}
+
+.first {
+    width: 15%;
+}
+.email {
+    width: 25%;
+}
+.searchf input {
+    margin-bottom: 10px !important;
+}
+.searchf label {
+    margin-bottom: 0px;
+}

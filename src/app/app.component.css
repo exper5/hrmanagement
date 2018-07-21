@@ -1,0 +1,28 @@
+
+  #home {
+    padding: 14px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+}
+/* .jumbotron{
+  background: url(/assets/header-bg.jpg) center; 
+} */
+.headbar {
+  background: transparent;
+  /* box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.3); */
+  padding: 0px 0px 10px 21px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+
+}
+.headbar.tech {
+  background-color: #1f232b !important;
+}

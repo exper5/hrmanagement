@@ -1,0 +1,82 @@
+.col-md-6.addrecord {
+
+    margin: 0 auto;
+
+}
+.col-md-10.addrecord {
+    margin: 0 auto;
+    background: #fff;
+    color: black;
+    text-shadow: none;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+    padding: 10px 20px;
+    margin-top: 60px;
+margin-bottom: 0px;
+
+}
+.btn-primary.status.green {
+
+    overflow: visible;
+    position: relative;
+    border: 0;
+    padding: 2px;
+    cursor: pointer;
+    height: 40px;
+    width: 110px;
+    font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    color: #fff;
+    text-transform: uppercase;
+    background: green;
+    border-radius: 3px;
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+
+}
+.btn-primary.status, .btn-primary.search {
+
+    overflow: visible;
+    position: relative;
+    border: 0;
+    padding: 2px;
+    cursor: pointer;
+    height: 40px;
+    width: 110px;
+    font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    color: #fff;
+    text-transform: uppercase;
+    background: blue;
+    border-radius: 3px;
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+
+}
+.btn-primary.search {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#home{
+    background: url(/assets/header-bg.jpg) center;
+    background-size: cover;
+    height: auto;
+  }
+  .headbar {
+    background: #1f232b;
+    /* box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.3); */
+    padding: 0px 0px 10px 21px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+
+}
+.col-md-10.addrecord .col-md-12 {
+    display: flex;
+}
+.candidaterecord .col-md-12 {
+    padding-top: 15px;
+}
+.addit {
+    padding-left: 30px;
+    padding-right: 30px;
+}

@@ -1,0 +1,55 @@
+
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          
+          <span class="d-none d-lg-block">
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/assets/user.png" alt="">
+          </span>
+        </a>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li>{{currentUser.firstName}}</li>
+            <li>{{currentUser.desig}}</li>
+            <li>{{currentUser.email}}</li>
+            <li><p><a [routerLink]="['/login']">Logout</a></p></li>
+          </ul>
+        </div>
+      </nav> -->
+   
+      <!-- <div class="col-md-4 home"></div> -->
+
+
+<!--<h2>{{currentUser.email}}</h2>
+<p>You're logged in with Angular 6!!</p>
+<h3>All registered users:</h3>
+<ul>
+    <li *ngFor="let user of users">
+        {{user.username}} ({{user.firstName}} {{user.lastName}} {{user.email}})
+        - <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
+    </li>
+</ul> -->
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="current">Hi <span>{{currentUser.firstName}}!</span></h1>
+        <div class="row">
+<div class="col-md-12 search-box">
+ 
+  <div class="col-md-6 box1">
+        
+        <!-- <h1 countUp endVal="345">0</h1> -->
+      <a [routerLink]="['/search']"><div class="new"><img src="/assets/cand.png"> <br> <span class="num">Search from <h1 class="count" countUp [endVal]="3500"></h1></span>Candidates</div></a>
+    </div>
+    <div class="col-md-6 box2">
+        <a [routerLink]="['/addcandidate']"><div class="new1"><img src="/assets/addcand.png"><br>Add Candidate</div></a>
+    </div>
+    
+</div>
+
+        </div>
+        <a [routerLink]="['/login']"><button class="btn"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</button></a>
+    </div>
+</div>
+
+<!-- <search-root></search-root> -->
+

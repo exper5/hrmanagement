@@ -1,0 +1,67 @@
+<section class="banner-area" id="home">
+<div class="jumbotron">
+    
+        <div class="container">
+            <div class="row">
+<div class="searchform">
+    <h1>Search Candidates</h1>
+        <div class="col-md-8 search">
+            <form [formGroup]="searchgroup" (ngSubmit)="onSubmit()" class="searchf">
+
+
+            <label>First name</label>
+        <input type="text" class="form-control classA" formControlName="firstName" placeholder="Enter First Name" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" capitalize >
+        <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                <div *ngIf="f.firstName.errors.required">First Name is required</div>
+            </div>
+            <label>Last name</label>
+        <input type="text" class="form-control classB" formControlName="lastName" placeholder="Enter Last Name" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }">
+        <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                <div *ngIf="f.lastName.errors.required">Last Name is required</div>
+            </div>
+            <label>Email</label>
+        <input type="text" class="form-control" formControlName="email" id="test1" placeholder="Enter Email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                <div *ngIf="f.email.errors.required">Email is required</div>
+            </div>
+            <label>Phone</label>
+        <input type="text" class="form-control" formControlName="phone" id="test2" placeholder="Enter Phone Number" [ngClass]="{ 'is-invalid': submitted && f.phone.errors }">
+        <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
+                <div *ngIf="f.phone.errors.required">Phone is required</div>
+            </div>
+            <label>Date of birth</label>
+        <input type="date" class="form-control" formControlName="dob" placeholder="Enter DOB"><br>
+        <button class="contact100-form-btn">Search</button>
+</form>
+    </div>
+</div>
+<div class="table-responsive">
+<table class="table" *ngIf="users.length>0" id="customers">
+    <h1>Candidate Details</h1>
+       <tbody>
+        <tr class="resulttitle">
+        <th class="first">First Name</th>
+        <th class="first">Last Name</th>
+        <th class="email">Email</th>
+        <th class="pho">Phone Number</th>
+        <th class="pho">Date of Birth</th>
+        <th class="rec">Add Record</th>
+        </tr>
+        
+        <tr  *ngFor="let user of users" class="result">
+            <td>{{user.firstName}}</td>
+            <td>{{user.lastName}}</td>
+            <td class="emailr">{{user.email}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.dob}}</td>
+            <td><a [routerLink]="['/record' , user.id]"><button class="contact100-form-btn">View / Add Record</button></a></td>
+        </tr>
+    </tbody>
+</table>
+ <div *ngIf="showTable" class="errormes"><img src="assets/not-found.png"></div> 
+ 
+</div>
+        </div>
+</div>
+</div>
+</section>

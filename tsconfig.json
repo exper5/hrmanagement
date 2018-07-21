@@ -1,0 +1,32 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2016",
+      "dom"
+    ]
+  },
+    // "paths": {
+    
+    //   "ngx-quill":[ "node_modules/ngx-quill/bundles/ngx-quill.umd.js"],
+    //   "quill": ["node_modules/quill/dist/quill.js"]
+    // }
+
+    "include": [
+      "src/**/*",
+      "node_modules/ngx-quill/src/quill.module.ts"
+     
+    ]
+  
+  
+}

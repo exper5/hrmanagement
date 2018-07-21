@@ -1,0 +1,179 @@
+<div class="jumbotron">
+        <div class="container">
+            <div class="row fullscreen d-flex align-items-center justify-content-center">
+<div class="col-md-10 addrecord">
+        
+<div class="recordform">
+        <form [formGroup]="addrecord" (ngSubmit)="onSubmit()" class="record">
+            <div class="col-md-12">
+                <div class="col-md-6">
+                <label>FirstName:</label>
+                <input type="text" class="form-control" formControlName="firstName" placeholder="Enter First Name" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" disabled>
+                <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                        <div *ngIf="f.firstName.errors.required">First Name is required</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label>LastName</label>
+                    <input type="text" class="form-control" formControlName="lastName" placeholder="Enter last Name" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" disabled>
+                <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                        <div *ngIf="f.lastName.errors.required">last Name is required</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                    <div class="col-md-6">
+                    <label>Email</label>
+                    <input type="email" class="form-control" formControlName="email" placeholder="Enter Email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" disabled>
+                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                        <div *ngIf="f.email.errors.required">email is required</div>
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                    <label>Phone Number</label>
+                    <input type="text" class="form-control" formControlName="phone" placeholder="Enter Phone Number" [ngClass]="{ 'is-invalid': submitted && f.phone.errors }" disabled>
+                <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
+                        <div *ngIf="f.phone.errors.required">Phone number is required</div>
+                    </div>
+                    </div>
+            </div>
+            <div class="col-md-12">
+                    <div class="col-md-6">
+                    <label>Date of Birth</label>
+                    <input type="date" class="form-control" formControlName="dob" placeholder="Enter Date of birth" [ngClass]="{ 'is-invalid': submitted && f.dob.errors }" disabled>
+                <div *ngIf="submitted && f.dob.errors" class="invalid-feedback">
+                        <div *ngIf="f.dob.errors.required">Date of birth is required</div>
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                    <label>Offer Given On:</label>
+                    <input type="date" class="form-control" formControlName="offergiven" placeholder="Enter offer given on" [ngClass]="{ 'is-invalid': submitted && f.offergiven.errors }">
+                <div *ngIf="submitted && f.offergiven.errors" class="invalid-feedback">
+                        <div *ngIf="f.offergiven.errors.required">offer given on  is required</div>
+                    </div>
+                    </div>
+            </div>
+
+            <div class="col-md-12">
+                    <div class="col-md-6">
+                    <label>Proposed Date of Joining</label>
+                    <input type="date" class="form-control" formControlName="doj" placeholder="Enter Proposed date of joining " [ngClass]="{ 'is-invalid': submitted && f.doj.errors }">
+                <div *ngIf="submitted && f.doj.errors" class="invalid-feedback">
+                        <div *ngIf="f.doj.errors.required">date of joining is required</div>
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                    <h3>Status:</h3> 
+                    <div>
+                            <!-- <button class="btn-primary status" type="button" (click)="HideButton()" [ngClass]=" !(showSelected) ? 'green' :' ' " >Accepted</button>
+                            <button class="btn-primary status" type="button"  (click)="ShowButton()" [ngClass]="showSelected? 'red' :' ' ">Declined</button> -->
+                            
+                            <label class="radio-inline">
+                                <input type="radio" value="accepted" formControlName="notification"  (click)="HideButton()" >Accepted
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" value="declined" formControlName="notification" (click)="ShowButton()">Declined
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                            <div *ngIf="showSelected" class="addit">
+                                
+                                    <label>Reason of decline</label>
+                                    <input type="text" class="form-control" formControlName="rod" placeholder="Enter Reason of decline" [ngClass]="{ 'is-invalid': submitted && f.rod.errors }">
+                                    <div *ngIf="submitted && f.rod.errors" class="invalid-feedback">
+                                            <div *ngIf="f.rod.errors.required">Reason of decline is required</div>
+                                       
+                                </div>
+                               
+                                        <label>Decline Date:</label>
+                                        <input type="date" class="form-control" formControlName="dd" placeholder="Enter Decline date" [ngClass]="{ 'is-invalid': submitted && f.dd.errors }">
+                                    <div *ngIf="submitted && f.dd.errors" class="invalid-feedback">
+                                            <div *ngIf="f.dd.errors.required">Decline date is required</div>
+                                        </div>
+                            
+                            </div>
+                        
+                
+                        <div class="col-md-12">
+                                <div class="col-md-6">
+                           
+                                <label>Additional Email Communication:</label>
+                                
+                                <input type="file" class="form-control" formControlName="addemail" placeholder="Additional Communication" (change)="changeFile($event.target.files)" [ngClass]="{ 'is-invalid': submitted && f.addemail.errors }">
+                                <div *ngIf="submitted && f.addemail.errors" class="invalid-feedback">
+                                        <div *ngIf="f.addemail.errors.required">Additional Communication is required</div>
+                                    </div>
+
+                                <input type="hidden" class="form-control" formControlName="fileName">
+
+                                </div>
+                                <div class="col-md-6">
+                                <label>Upload Documents:</label>
+                                
+                                <input type="file" class="form-control" formControlName="uploaddoc" placeholder="Upload Documents" (change)="changeFile1($event.target.files)" accept=".doc, .docx" [ngClass]="{ 'is-invalid': submitted && f.uploaddoc.errors }">
+                                <div *ngIf="submitted && f.uploaddoc.errors" class="invalid-feedback">
+                                        <div *ngIf="f.uploaddoc.errors.required">Upload Documents is required</div>
+                                    </div>
+
+                                    <input type="hidden" class="form-control" formControlName="uploaddocs">
+
+                                </div>
+                        </div>
+                                    <!-- <quill-editor></quill-editor> -->
+                                <!-- <input type="file" class="fileupload">
+                                <button class="button" type="button">upload</button>   -->
+                          <div class="addbut">
+                        <button class="contact100-form-btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+                    <div class="table-responsive">
+                        <h3 class="offers">Past Offers</h3>
+                       <table class="table offer" id="customers">
+                           <tbody>
+                               <tr class="offer">
+                                   <th>Reason of Decline</th>
+                                   <th>Decline Date</th>
+                                   <th>Additional Email</th>
+                                   <th>Offer Given on</th>
+                                   <th>Date of Joining</th>
+                                   <th>Uploaded Documents</th>
+                              
+                               </tr>
+                               <tr *ngFor="let offer of user_Rec.offers" class="offer">
+                                   <td>{{offer.rod?offer.rod:'N/A'}}</td>
+                                   <td>{{offer.dd ?offer.dd:'N/A'}}</td>
+                                   <td><button type="button" class="contact100-form-btn" (click)="openModal(offer.fileName)">View</button>
+                                    </td>
+                                   <td>{{offer.offergiven}}</td>
+                                   <td>{{offer.doj}}</td>
+                                   <td><a href="{{offer.uploaddocs}}" target="_blank">view</a></td>
+                                   
+                               </tr>
+                               
+                           </tbody>
+                       </table> 
+
+
+                       
+
+
+                    <!--modal-->
+                    
+ 
+                    <ng-template #template>
+                      
+                    </ng-template>
+                    <!--modal-->
+                    </div>
+            </div>
+        </div>
+</div>
+
+   
